@@ -33,7 +33,7 @@ var ImageSvg = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     ImageSvg.prototype.render = function () {
-        assert_1.default(this.props.width && this.props.height, 'The width and height on imagesvg are mandatory.');
+        (0, assert_1.default)(this.props.width && this.props.height, 'The width and height on imagesvg are mandatory.');
         if (this.props.width > 0 && this.props.height > 0) {
             var combinedStyles = reactxp_1.Styles.combine([{
                     display: 'flex',
